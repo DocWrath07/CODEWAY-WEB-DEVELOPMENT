@@ -1,0 +1,109 @@
+/* Resetting default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #222; /* Medium dark background */
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+.logo img {
+    width: 240px;
+    height: 100px;
+}
+
+/* Styling navigation bar */
+header {
+    background-color: #333; /* Dark background for the header */
+    padding: 10px;
+    position: relative;
+}
+
+header nav ul {
+    list-style: none;
+    float: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+header nav ul li a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* Styling dropdown menu */
+header nav ul ul {
+    display: none;
+    position: absolute;
+    top: 40px;
+    background-color: #333; /* Background color for the dropdown menu */
+    left: 0;
+}
+
+header nav ul li:hover > ul {
+    display: block;
+}
+
+header nav ul ul li {
+    float: none;
+    width: 100%;
+}
+
+header nav ul ul li a {
+    padding: 10px 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Centering text in the main content */
+.center-text {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling the h1 element */
+h1 {
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Styling the content and profile sections */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .content {
+    width: 70%;
+    text-align: left;
+}
+
+.container .profile {
+    width: 30%;
+    text-align: right;
+}
+
+.container .profile img {
+    width: 300px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #000;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Scroll to section */
+html {
+    scroll-behavior: smooth;
+}
