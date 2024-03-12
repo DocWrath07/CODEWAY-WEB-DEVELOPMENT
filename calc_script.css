@@ -1,0 +1,53 @@
+body {
+    background-image: url('bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    width: 80%;
+}
+
+.display {
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+input[type=button] {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #64278f;
+    color: white;
+    border: solid black 0.5px;
+    width: 100%;
+    border-radius: 10px;
+    height: 70px;
+    outline: none;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer; /* Add cursor pointer on hover */
+}
+
+input[type=button]:hover {
+    background-color: #531d76; /* Darken the button on hover */
+}
+
+input[type=button]:active {
+    background-color: #008080;
+    -webkit-box-shadow: inset 0px 0px 6px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
